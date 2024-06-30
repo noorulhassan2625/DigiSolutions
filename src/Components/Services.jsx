@@ -46,7 +46,7 @@ function Services() {
   return (
     <div className="services mt-5">
       <div className="title text-center">
-        <h2>Our Services</h2>
+        <h2 className="services-title">Our Services</h2>
         <hr className="custom-hr" />
         <h2>Explore what services we’re offering</h2>
       </div>

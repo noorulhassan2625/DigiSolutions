@@ -45,9 +45,9 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
-            <li className="nav-item ms-3">
+            <li className="nav-item mx-3">
               <a className="nav-link p-0" href="#">
-                <button className="btn btn-primary">GET A QUOTE</button>
+                <button className="btn btn-primary nav-btn">GET A QUOTE</button>
               </a>
             </li>
           </ul>

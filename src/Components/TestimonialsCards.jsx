@@ -1,22 +1,22 @@
 import React from "react";
 
-function TestimonialsCards({ title, content, userName, testimonialDescription }) {
+function TestimonialsCards({ title, content, userName, testimonialDescription, className }) {
   return (
-    <div className="col-md-3">
-      <div className="rounded border p-3 cards-testimonials bg-white">
-      <div className="card-title">
-        <h5>{title}</h5>
+    <div className="col-md-3 px-1">
+      <div className={`rounded border  cards-testimonials ${className}`}>
+      <div className="card-title p-3">
+        <h5 className="text-white">{title}</h5>
       </div>
       <div className="card-content">
-        <p>{content}</p>
+        <p className="p-3 text-white font-weight-normal">{content}</p>
 
-        <div className="user-info">
-          <div>
-            <img src="" alt="" />
+        <div className="user-info bg-black px-3 pt-3 d-flex rounded-bottom">
+          <div className="mt-1 me-2">
+            <img className="rounded-circle" src="https://via.placeholder.com/150" width={'50px'} alt="" />
           </div>
           <div>
-            <h5>{userName}</h5>
-            <p>{testimonialDescription}</p>
+            <h5 className="text-white">{userName}</h5>
+            <p className="text-white">{testimonialDescription}</p>
           </div>
           <div>
             <img className="arrow-image" src="" alt="" />

@@ -2,7 +2,7 @@ import React from "react";
 
 function GetAQuote() {
   return (
-    <div className="get-a-quote container shadow rounded p-3 my-5">
+    <div className="get-a-quote container-fluid px-5 my-5">
       <div className="row">
         <div className="col-md-10">
           <div className="content">
@@ -14,7 +14,8 @@ function GetAQuote() {
           </div>
         </div>
         <div className="col-md-2">
-          <button className="btn btn-primary mt-3">GET A QUOTE</button>
+          <button className="btn btn-primary bg-black mt-3">
+            GET A QUOTE</button>
         </div>
       </div>
     </div>

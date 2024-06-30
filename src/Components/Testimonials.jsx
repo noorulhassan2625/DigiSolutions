@@ -1,64 +1,78 @@
 import React from "react";
 import TestimonialsCards from "./TestimonialsCards";
+import ArrowUp from "./icons/ArrowUp";
 // import TestimonialsCards from "./TestimonialsCards";
-
 function Testimonials() {
   // Demo data for testimonials
   const testimonialsData = [
-    {
+    { 
       title: "HAMMAD TURNED OUR BUSINESS",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit dolor at eius suscipit laborum iste minima voluptatem, tempore, animi vel omnis. Tempore, ut.",
       userName: "John Doe",
-      testimonialDescription: "CEO, Company A"
+      testimonialDescription: "CEO, Company A",
+      cardNumber: "testimonial-card testimonial-1"
     },
     {
       title: "GREAT SERVICE AND SUPPORT",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus ratione nemo velit maiores dolore consequuntur, dignissimos rem minima voluptatem. Sequi, impedit.",
       userName: "Jane Smith",
-      testimonialDescription: "Founder, Company B"
+      testimonialDescription: "Founder, Company B",
+      cardNumber: "testimonial-card testimonial-2"
     },
     {
       title: "EXCELLENT RESULTS POTENTIALS",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit dolor at eius suscipit laborum iste minima voluptatem, tempore, animi vel omnis . Tempore, ut.",
       userName: "Michael Johnson",
-      testimonialDescription: "CTO, Company C"
+      testimonialDescription: "CTO, Company C",
+      cardNumber: "testimonial-card testimonial-3"
+
     },
     {
       title: "HIGHLY RECOMMENDED WITH GOOD IDEAS",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, placeat? Soluta aspernatur enim officia distinctio suscipit, alias laboriosam debitis at autem quisquam.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, placeat? Soluta aspernatur enim weo suscipit, alias laboriosam debitis at autem quisquam.",
       userName: "Sarah Brown",
-      testimonialDescription: "COO, Company D"
-    }
+      testimonialDescription: "COO, Company D",
+      cardNumber: "testimonial-card testimonial-4"
+
+    },
   ];
 
   return (
     <div className="testimonials py-5">
-    <div className="container my-5">
-      <div className="heading-title d-flex">
-        <div>
-        <h2>Testimonials</h2>
-        <hr className="custom-hr ms-0 w-100" />
+      <div className="container my-5">
+        <div className="testimonials-title d-flex">
+          <div>
+            <h2 className="text-white">Testimonials</h2>
+          </div>
+          <div className="ms-auto d-flex">
+            <span className="icon"></span>
+            <button className="btn bg-transparent text-white border-0">
+              <span className="icon rounded-circle bg-black p-1 me-2">
+                <ArrowUp
+                  style={{ width: "23px", color: "white",  }}
+                />
+              </span>
+              All Testimonials
+            </button>
+          </div>
         </div>
-        <div className="ms-auto">
-          <button className="btn btn-primary">Explore More</button>
+        <div className="row mt-4">
+          {testimonialsData.map((testimonial, index) => (
+            <TestimonialsCards
+              key={index} // Ensure each card has a unique key
+              title={testimonial.title}
+              content={testimonial.content}
+              userName={testimonial.userName}
+              testimonialDescription={testimonial.testimonialDescription}
+              className={testimonial.cardNumber}
+            />
+          ))}
         </div>
       </div>
-      <div className="row mt-4">
-        {testimonialsData.map((testimonial, index) => (
-          <TestimonialsCards
-            key={index} // Ensure each card has a unique key
-            title={testimonial.title}
-            content={testimonial.content}
-            userName={testimonial.userName}
-            testimonialDescription={testimonial.testimonialDescription}
-          />
-        ))}
-      </div>
-    </div>
     </div>
   );
 }

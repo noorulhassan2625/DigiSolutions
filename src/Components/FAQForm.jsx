@@ -39,10 +39,11 @@ function FAQForm() {
   };
 
   return (
-    <div className="bg-light p-3 rounded mt-4">
+    <div className=" faqForm p-3 rounded mt-4">
+      <h4 className='text-white border-bottom border-black py-4'>Ask your question If not found</h4>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
+        <div className="mb-3 mt-4">
+          <label htmlFor="name" className="text-white form-label">Name</label>
           <input
             type="text"
             className="form-control"
@@ -54,7 +55,7 @@ function FAQForm() {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email</label>
+          <label htmlFor="email" className="text-white form-label">Email</label>
           <input
             type="email"
             className="form-control"
@@ -66,7 +67,7 @@ function FAQForm() {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="question" className="form-label">Question</label>
+          <label htmlFor="question" className="text-white form-label">Question</label>
           <textarea
             className="form-control"
             id="question"
@@ -76,8 +77,8 @@ function FAQForm() {
             onChange={handleChange}
             required
           ></textarea>
+        <button type="submit" className=" w-100 faq-btn  mt-3 py-3 btn btn-primary">SEND YOUR MESSAGE</button>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     </div>
   );

@@ -23,15 +23,14 @@ function Projects() {
 
   return (
     <div className="projects pt-4 pb-5">
-    <div className="container my-5">
-      <div className="heading-title d-flex">
+    <div className="container-fluid my-5">
+      <div>
         <div>
-        <h2 className="text-white">Our Portfolio</h2>
-        <hr className="custom-hr ms-0 w-100" />
+        <h2 className="projects-title fw-bold px-md-5 px-lg-5 px-1">Projects</h2>
         </div>
-        <div className="ms-auto">
+        {/* <div className="ms-auto">
           <button className="btn btn-primary border border-white">Explore More</button>
-        </div>
+        </div> */}
       </div>
       <div className="row">
         <ProjectsCards projects={projects} />

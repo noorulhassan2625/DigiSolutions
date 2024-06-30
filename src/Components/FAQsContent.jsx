@@ -4,7 +4,7 @@ function FAQsContent({ faqs }) {
   return (
     <div className="accordion mt-4" id="faqAccordion">
       {faqs.map((faq, index) => (
-        <div className="accordion-item" key={index}>
+        <div className={`accordion-item my-3 ${faq.faqNumber}`} key={index}>
           <h2 className="accordion-header" id={`heading${index}`}>
             <button
               className={`accordion-button ${index !== 0 ? 'collapsed' : ''}`}
