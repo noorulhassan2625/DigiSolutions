@@ -46,7 +46,7 @@ function ContactUs() {
   return (
     <>
       <hr />
-      <div className="container my-5">
+      <div className="container my-5 py-5">
         <div className="row">
           <div className="col-md-4">
             <div className="title">
@@ -124,7 +124,7 @@ function ContactUs() {
                   ></textarea>
                 </div>
                 <div className="col-md-2">
-                  <button type="submit" className="btn btn-primary mt-3 w-100">Contact Us</button>
+                  <button type="submit" className="btn btn-primary mt-3 w-100 bg-black">Contact Us</button>
                 </div>
               </div>
             </form>

@@ -24,7 +24,30 @@
 
 .slide-content {
   /* padding: 20px; */
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
+<<<<<<< HEAD
+  height: 100%;
+  position: relative;
+=======
   height: 400px;
+>>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
+}
+.slide-info{
+position: absolute;
+padding: 15px;
+bottom: 0px;
+}
+.slide-content .slide-info p{
+  display: none;
+  transition: 1s;
+}
+.slide-content:hover .slide-info p{
+  display: block !important;
+  font-size: 18px;
+  /* transition: 1s; */
+}
+.slide-content:hover .slide-info{
+  transform: translate(0px , -30px);
+  transition: 1s;
 }

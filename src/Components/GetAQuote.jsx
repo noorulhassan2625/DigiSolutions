@@ -2,7 +2,11 @@ import React from "react";
 
 function GetAQuote() {
   return (
+<<<<<<< HEAD
+    <div className="get-a-quote container-fluid px-5 mb-5 pb-4">
+=======
     <div className="get-a-quote container-fluid px-5 my-5">
+>>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
       <div className="row">
         <div className="col-md-10">
           <div className="content">

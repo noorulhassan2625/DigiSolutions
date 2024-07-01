@@ -47,8 +47,13 @@ function Services() {
     <div className="services mt-5">
       <div className="title text-center">
         <h2 className="services-title">Our Services</h2>
+<<<<<<< HEAD
+        <hr className="custom-hr mt-3" />
+        <h2 className="mb-5 mt-3">Explore what services we’re offering</h2>
+=======
         <hr className="custom-hr" />
         <h2>Explore what services we’re offering</h2>
+>>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
       </div>
       <ServicesCards services={serviceData} />
       <SwiperSlider />

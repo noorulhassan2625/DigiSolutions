@@ -25,7 +25,11 @@ function Projects() {
     <div className="projects pt-4 pb-5">
     <div className="container-fluid my-5">
       <div>
+<<<<<<< HEAD
+        <div className="mb-5">
+=======
         <div>
+>>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
         <h2 className="projects-title fw-bold px-md-5 px-lg-5 px-1">Projects</h2>
         </div>
         {/* <div className="ms-auto">
