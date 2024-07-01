@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 
 function ArrowUp({ style }) {
@@ -21,27 +20,3 @@ function ArrowUp({ style }) {
 }
 
 export default ArrowUp;
-=======
-import React from "react";
-
-function ArrowUp({ style }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      style={style}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-      />
-    </svg>
-  );
-}
-
-export default ArrowUp;
->>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838

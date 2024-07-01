@@ -44,11 +44,7 @@ function Testimonials() {
   return (
     <div className="testimonials py-5">
       <div className="container my-5">
-<<<<<<< HEAD
         <div className="testimonials-title d-flex mb-5">
-=======
-        <div className="testimonials-title d-flex">
->>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
           <div>
             <h2 className="text-white">Testimonials</h2>
           </div>
@@ -64,11 +60,7 @@ function Testimonials() {
             </button>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="row mt-5 pt-3">
-=======
-        <div className="row mt-4">
->>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
           {testimonialsData.map((testimonial, index) => (
             <TestimonialsCards
               key={index} // Ensure each card has a unique key

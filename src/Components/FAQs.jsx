@@ -28,17 +28,10 @@ function FAQs() {
 
   return (
     <div className="faq container-fluid my-5">
-<<<<<<< HEAD
       <div className="faq-title px-5 py-4 text-capitalized rounded text-white mb-4">
         <h3>Frequently Asked Questions</h3>
         {/* <hr className="custom-hr w-25" /> */}
       </div>  
-=======
-      <div className="faq-title px-5 py-4 text-capitalized rounded text-white">
-        <h3>Frequently Asked Questions</h3>
-        {/* <hr className="custom-hr w-25" /> */}
-      </div>
->>>>>>> 50c671cd9764564782abf3cde29f6ad4ffaf1838
       <div className="row">
         <div className="col-md-6">
           <FAQsContent faqs={faqs}  />
@@ -52,3 +45,4 @@ function FAQs() {
 }
 
 export default FAQs;
+ 
